@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TP2</string>
+    <string name="n">nom</string>
+    <string name="t">taille</string>
+    <string name="p">poids</string>
+    <string name="r">annuler</string>
+    <string name="c">commentaire</string>
+    <string name="res">resultats</string>
+    <string name="g">groupe</string>
+    <string name="s">envoyer</string>
+    <string name="poids">Poids</string>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TP2</string>
+    <string name="n">name</string>
+    <string name="t">length</string>
+    <string name="p">weight</string>
+    <string name="r">reset</string>
+    <string name="c">comments</string>
+    <string name="res">result</string>
+    <string name="g">group</string>
+    <string name="s">send</string>
+</resources>
