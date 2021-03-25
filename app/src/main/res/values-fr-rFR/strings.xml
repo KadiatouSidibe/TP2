@@ -10,4 +10,11 @@
     <string name="g">groupe</string>
     <string name="s">envoyer</string>
     <string name="poids">Poids</string>
+    <string name="taille">Taille</string>
+    <string name="unite_Metre">Mètre</string>
+    <string name="centimetre">Centimètre</string>
+    <string name="imc">Calculer l\'IMC</string>
+    <string name="reset">Reset</string>
+    <string name="result">Résultat:</string>
+    <string name="obtenir_resultat">Vous devez cliquer sur le bouton « Calculer l\'IMC » pour obtenir un résultat.</string>
 </resources>

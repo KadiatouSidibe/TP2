@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -64,11 +65,10 @@ public class MainActivity extends AppCompatActivity {
                 float pValue = Float.valueOf(p);
                 if(pValue <= 0)
                     makeText(MainActivity.this, "Le poids doit etre positif", LENGTH_SHORT).show();
-                else {
-                    if (t.contains(".")||t.contains(","))
-                        group.check(R.id.radio_metre);
+
                     // Si l'utilisateur a indiqué que la taille était en centimètres
                     // On vérifie que la Checkbox sélectionnée est la deuxième à l'aide de son identifiant
+                else
                     if (group.getCheckedRadioButtonId() == R.id.radio_centimetre) tValue = tValue / 100;
                     float imc = pValue / (tValue * tValue);
                     String resultat="Votre IMC est " + imc+" . ";
@@ -78,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             }
-        }
     };
 
     private String interpreteIMC(float imc) {
@@ -125,6 +124,12 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
             result.setText(texteInit);
+            if (!s.toString().isEmpty()) {
+                if (s.toString().charAt(s.length() - 1) == '.') {
+                    RadioButton mRadio = findViewById(R.id.radio_metre);
+                    mRadio.setChecked(true);
+                }
+            }
         }
 
         @Override
